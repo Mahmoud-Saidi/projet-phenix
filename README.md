@@ -6,7 +6,7 @@ Le projet permet egalement de générer des fichiers de transactions et des fich
 
 Le projet contient deux classe principales : ProcessData et GenerateData.
 
-_ ProcessData _: 
+## ProcessData: 
 Le main de cette class permet de répondre au besoin fonctionnelle du projet en générant les fichiers : 
 top_100_ventes_<ID_MAGASIN>_YYYYMMDD.data
 top_100_ventes_GLOBAL_YYYYMMDD.data
@@ -26,7 +26,7 @@ globalTreatData : cette fonction traite les données par id_produit puis par dat
 
 Les autres fonctions readFile, getData et saveData permet de faire la lecture et l'ecriture des fichiers csv.
 
-_GenerateData_: 
+## GenerateData : 
 Le main de cette class permet de générer des fichiers csv afin de simuler la volumétrie attendue : 
 transactions_YYYYMMDD.data
 reference_prod-ID_MAGASIN_YYYYMMDD.data
