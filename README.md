@@ -6,7 +6,7 @@ Le projet permet egalement de générer des fichiers de transactions et des fich
 
 Le projet contient deux classe principales : ProcessData et GenerateData.
 
-_ProcessData_: 
+_ ProcessData _: 
 Le main de cette class permet de répondre au besoin fonctionnelle du projet en générant les fichiers : 
 top_100_ventes_<ID_MAGASIN>_YYYYMMDD.data
 top_100_ventes_GLOBAL_YYYYMMDD.data
