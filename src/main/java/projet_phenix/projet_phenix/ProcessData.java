@@ -196,7 +196,7 @@ public class ProcessData {
 
 		Map<String, List<String[]>> groupedTxRows = txRows.filter(row -> row[3] != "0").collect(Collectors.groupingBy(row -> row[3]));
 
-		//process data for specific id_magasin grouped by id_product 
+		//process data grouped by id_product 
 		groupedTxRows.forEach((String idProduct, List<String[]> listByProduct) -> {
 
 			//quantity of product 
@@ -204,7 +204,7 @@ public class ProcessData {
 
 			AtomicInteger bitsCa = new AtomicInteger(0);
 
-			//process data for specific id_magasin grouped by date 
+			//process data grouped by date 
 			listByProduct.stream().collect(Collectors.groupingBy(row -> row[1])).forEach((String dateP, List<String[]> listByDate) ->{
 
 				listByDate.forEach(row -> {
